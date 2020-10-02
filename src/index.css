@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+.Main {
+  border: 1px solid red;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Hero"
+    "Description"
+    "FornitureOne"
+    "About"
+    "FornitureTwo";
+}
+
+.Hero {
+  grid-area: Hero;
+  border: 4px solid purple;
+  height: 28rem;
+}
+
+.Navbar {
+  border: 1px solid blue;
+  height: 6rem;
+}
+
+.Buttons {
+  border: 2px dashed red;
+  width: 8rem;
+  height: 4rem;
+  position: absolute;
+  top: 24rem;
+  left: calc(100% - 8rem);
+}
+
+.Description {
+  grid-area: Description;
+  border: 1px solid palevioletred;
+  height: 28rem;
+}
+
+.FornitureOne {
+  grid-area: FornitureOne;
+  border: 1px solid palegreen;
+  height: 20rem;
+}
+
+.About {
+  grid-area: About;
+  border: 1px solid peru;
+  height: 28rem;
+}
+
+.FornitureTwo {
+  grid-area: FornitureTwo;
+  border: 1px solid royalblue;
+  height: 20rem;
+}
