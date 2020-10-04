@@ -10,6 +10,10 @@
 
 :root {
   /* Colors */
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
 }
 
 html {
@@ -35,46 +39,91 @@ body {
 
 .Hero {
   grid-area: Hero;
-  border: 4px solid purple;
-  height: 28rem;
+  /* border: 4px solid purple; */
+  height: 38rem;
+  position: relative;
 }
 
 .Navbar {
-  border: 1px solid blue;
+  position: absolute;
+  /* border: 1px solid blue; */
   height: 6rem;
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.Icon__hamburger {
+  position: absolute;
+  left: 2.5rem;
+  background: none;
+  border: none;
+}
+
+.Hero_imgContainer {
+  background-color: lavenderblush;
+  height: 100%;
+  width: 100%;
+}
+
+.Hero_imgContainer > img {
+  width: 100%;
+  height: 100%;
 }
 
 .Buttons {
-  border: 2px dashed red;
-  width: 8rem;
-  height: 4rem;
+  width: 10rem;
+  height: 5rem;
   position: absolute;
-  top: 24rem;
-  left: calc(100% - 8rem);
+  top: 33rem;
+  left: calc(100% - 10rem);
+  display: flex;
+  background-color: var(--black);
+}
+
+.Button {
+  width: 50%;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem;
+}
+
+.left {
+  background-image: url("../images/icon-angle-left.svg");
+}
+
+.right {
+  background-image: url("../images/icon-angle-right.svg");
 }
 
 .Description {
   grid-area: Description;
-  border: 1px solid palevioletred;
-  height: 28rem;
+  /* border: 1px solid palevioletred; */
+  height: 40rem;
 }
 
 .FornitureOne {
   grid-area: FornitureOne;
-  border: 1px solid palegreen;
-  height: 20rem;
+  /* border: 1px solid palegreen; */
+  height: 25rem;
+  background-image: url("../images/image-about-dark.jpg");
 }
 
 .About {
   grid-area: About;
-  border: 1px solid peru;
+  /* border: 1px solid peru; */
   height: 28rem;
 }
 
 .FornitureTwo {
   grid-area: FornitureTwo;
-  border: 1px solid royalblue;
-  height: 20rem;
+  /* border: 1px solid royalblue; */
+  height: 25rem;
+  background-image: url("../images/image-about-light.jpg");
 }
 
 @media screen and (min-width: 1240px) {
@@ -99,7 +148,7 @@ body {
     left: 0;
     grid-column-start: 4;
     grid-row-start: 2;
-    width: 30.1%;
+    width: 30%;
     height: 12vh;
   }
 
