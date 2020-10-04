@@ -72,3 +72,68 @@ body {
   border: 1px solid royalblue;
   height: 20rem;
 }
+
+@media screen and (min-width: 1240px) {
+  .Main {
+    grid-template-columns: 36% 12% 12% 12% 30%;
+    grid-template-rows: 53vh 12vh 35vh;
+  }
+
+  .Hero {
+    border: none;
+    background-color: violet;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .Buttons {
+    /* position: static; */
+    top: 0;
+    left: 0;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    width: 30.1%;
+    height: 12vh;
+  }
+
+  .Description {
+    background-color: palevioletred;
+    height: auto;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .FornitureOne {
+    background-color: palegreen;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .About {
+    background-color: peru;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .FornitureTwo {
+    border: none;
+    background-color: turquoise;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: auto;
+    height: auto;
+  }
+}
