@@ -11,11 +11,15 @@
     <main class="Main">
       <div class="Hero">
         <nav class="Navbar">
-          <button class="Icon__hamburger">
-            <img src="./images/icon-hamburger.svg" alt="icon hamburger" />
-          </button>
+          <div class="Icon__hamburger">
+            <button id="Button__hamburger">
+              <span class="top-line"></span>
+              <span class="middle-line"></span>
+              <span class="bottom-line"></span>
+            </button>
+          </div>
           <img class="Navbar__logo" src="./images/logo.svg" alt="room" />
-          <ul class="Navbar__items">
+          <ul class="Navbar__items" id="Navbar__items">
             <li>home</li>
             <li>shop</li>
             <li>about</li>
@@ -64,5 +68,6 @@
 
       <div class="FornitureTwo"></div>
     </main>
+    <script src="./src/index.js"></script>
   </body>
 </html>
