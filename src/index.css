@@ -340,9 +340,21 @@ body {
   }
 
   .Navbar__items {
-    display: flex;
     text-decoration: none;
     list-style-type: none;
+    display: flex;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Navbar__items > li {
+    /* border: solid 1px violet; */
+    margin-left: 4.5rem;
+    cursor: pointer;
+    padding: 1rem 0 1rem 0;
   }
 
   .Navbar__items > li:hover {
