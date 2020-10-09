@@ -192,14 +192,15 @@ body {
   display: flex;
   width: 100%;
   height: 8rem;
+  padding-right: 4rem;
   background-color: white;
   color: var(--very-dark-gray);
   text-decoration: none;
   list-style-type: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   top: 0;
   left: 0;
@@ -208,7 +209,7 @@ body {
 
 .Navbar__items > li {
   /* border: solid 1px violet; */
-  margin-left: 4.5rem;
+  margin-left: 2rem;
   cursor: pointer;
   padding: 1rem 0 1rem 0;
 }
@@ -247,6 +248,16 @@ body {
   background-size: 1rem;
 }
 
+.Button:hover {
+  outline: none;
+  background-color: var(--very-dark-gray);
+}
+
+.Button:focus {
+  outline: none;
+  background-color: var(--dark-gray);
+}
+
 .left {
   background-image: url("../images/icon-angle-left.svg");
 }
@@ -279,6 +290,10 @@ body {
   text-decoration: none;
   color: var(--black);
   letter-spacing: 10px;
+}
+
+.Description > .Description__anchor:hover {
+  color: var(--dark-gray);
 }
 
 .Description > .Description__anchor > img {
