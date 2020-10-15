@@ -33,15 +33,6 @@ btnHamburger.addEventListener("click", despliegueHamburguesa);
 btnLeft.addEventListener("click", anterior);
 btnRight.addEventListener("click", siguiente);
 
-window.addEventListener("resize", function(){
-  // tu código aquí
-  let n,d
-  n = image.src.length - 5;
-  d = parseInt(image.src.slice(n, -4));
-  console.log(d);
-  render(d);
-});
-
 function despliegueHamburguesa() {
   btnHamburger.classList.toggle("open");
   items.classList.toggle("show");
