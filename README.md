@@ -2,7 +2,7 @@
 
 ![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
 
-Mira el resultado [Demo]()
+Mira el resultado [Demo](https://ankynator.github.io/platzi-room-homepage-S6/)
 
 **Para realizar este reto, se utilizo HTML CSS y JS**
 
