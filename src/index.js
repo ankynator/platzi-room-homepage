@@ -11,20 +11,20 @@ let contador = 0;
 
 const image1 = {
   id: 1,
-  mobile: "../images/mobile-image-hero-1.jpg",
-  desktop: "../images/desktop-image-hero-1.jpg",
+  mobile: "./images/mobile-image-hero-1.jpg",
+  desktop: "./images/desktop-image-hero-1.jpg",
 };
 
 const image2 = {
   id: 2,
-  mobile: "../images/mobile-image-hero-2.jpg",
-  desktop: "../images/desktop-image-hero-2.jpg",
+  mobile: "./images/mobile-image-hero-2.jpg",
+  desktop: "https://raw.githubusercontent.com/ankynator/platzi-room-homepage-S6/master/images/desktop-image-hero-2.jpg",
 };
 
 const image3 = {
   id: 3,
-  mobile: "../images/mobile-image-hero-3.jpg",
-  desktop: "../images/desktop-image-hero-3.jpg",
+  mobile: "./images/mobile-image-hero-3.jpg",
+  desktop: "./images/desktop-image-hero-3.jpg",
 };
 
 const images = [image1, image2, image3];
